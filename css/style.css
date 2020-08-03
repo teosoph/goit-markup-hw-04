@@ -409,8 +409,6 @@ main {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-
-  border: 3px solid red;
 }
 .team-list-teammate-social-list li a {
   display: block;
@@ -425,11 +423,11 @@ main {
   fill: #afb1b8;
 }
 
-.team-list-teammate-social-list-item_1:hover {
+.team-list-teammate-social-list-item:hover {
   background-color: var(--accent-color);
 }
 
-.team-list-teammate-social-list-item_1:hover
+.team-list-teammate-social-list-item:hover
   .team-list-teammate-social-list-item-link-svg {
   fill: var(--teammember-social-img-hover);
 }
