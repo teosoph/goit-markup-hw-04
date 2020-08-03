@@ -421,11 +421,15 @@ main {
   width: 22px;
   color: #afb1b8;
 }
+.team-list-teammate-social-list-item-link-svg {
+  fill: #afb1b8;
+}
 
 .team-list-teammate-social-list-item:hover {
   background-color: var(--accent-color);
 }
-.team-list-teammate-social-list-item:hover
+
+.team-list-teammate-social-list-item_1:hover
   .team-list-teammate-social-list-item-link-svg {
   fill: var(--teammember-social-img-hover);
 }
