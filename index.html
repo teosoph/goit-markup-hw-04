@@ -40,28 +40,41 @@
           </ul>
         </nav>
 
-        <!-- контакты -->
+        <!-- contacts -->
         <div class="header-contacts">
           <address class="header-address">
             <ul class="header-address-list list">
-              <li>
-                <img src="/images/header/envelope.svg" alt="" />
+              <!-- e-mail -->
+              <li class="header-address-list-email">
                 <a
-                  class="header-address-list-email link hover focus"
+                  class="header-address-list-email-link link hover focus"
                   href="mailto:"
-                  >info@devstudio.com</a
+                  aria-label="e-mail icon"
                 >
+                  <svg class="header-address-list-email-img">
+                    <use href="./images/sprite.svg#e-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
+              <!-- telephone -->
               <li>
-                <img src="/images/header/smartphone.svg" alt="" />
                 <a
                   class="header-address-list-tel link hover focus"
                   href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                  aria-label="telephone icon"
+                >
+                  <svg class="header-address-list-tel-img">
+                    <use href="./images/sprite.svg#telephone"></use>
+                  </svg>
+
+                  +38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
+
+          <a href=""></a>
         </div>
       </div>
     </header>
