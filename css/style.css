@@ -179,18 +179,16 @@ section {
 }
 .header-address-list-email-img {
   fill: var(--logo-color-1);
-  /* transition: fill 250ms cubic-bezier(0.4 0 0.2 1); */
-
   margin-right: 10px;
+  /* transition: fill 250ms cubic-bezier(0.4 0 0.2 1); */
 }
 .header-address-list-email:hover .header-address-list-email-img {
   fill: var(--accent-color);
 }
-
 .header-address-list-tel-img {
   fill: var(--logo-color-1);
+  margin-right: 10px;
 }
-
 .header-address-list-tel:hover .header-address-list-tel-img {
   fill: var(--accent-color);
 }
