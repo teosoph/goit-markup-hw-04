@@ -21,6 +21,8 @@
   /* section-3 doing-list*/
   --doings-img-background: rgba(47, 48, 58, 0.8);
   --doings-img-font: #ffffff;
+  /* clients list */
+  --clients-list-color: #afb1b8
   /* Team */
   --teammember-social-img-hover: #fff;
   /* footer */
@@ -461,15 +463,18 @@ main {
 .clients-list a {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--clients-list-color);
   border-radius: 4px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.clients-list-item:hover .clients-list-item-img {
+  fill: var(--accent-color);
+}
 .clients-list-item-img {
-  fill: #afb1b8;
+  fill: var(--clients-list-color);
 }
 
 /* Portfolio filter  ========================*/
@@ -477,7 +482,6 @@ main {
   padding-top: 93px;
   padding-bottom: 50px;
 }
-
 .filter-list-item {
   display: flex;
   justify-content: center;
@@ -621,22 +625,28 @@ footer {
   display: block;
   margin-bottom: 20px;
 }
+/* Footer socials connections ==================== */
 .footer-connections-socials {
   display: flex;
   margin-right: 94px;
 }
+.footer-connections-socials li:not(:last-child) {
+margin-left: 10px;}
+
 .footer-connections-socials li {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-connections-socials-instagram {
-  background-image: url(../images/footer/instagram.svg);
+
+.footer-connections-socials-instagram-img {
+  fill: var(--footer-conection-text-color);
 }
-.footer-connections-socials-twiter {
+.footer-connections-socials-twitter {
   background-image: url(../images/footer/twitter.svg);
 }
 .footer-connections-socials-facebook {
@@ -645,6 +655,7 @@ footer {
 .footer-connections-socials-linkedin {
   background-image: url(../images/footer/linkedin.svg);
 }
+
 .footer-connections-title-2 {
   font-family: var(--font);
   font-style: normal;
@@ -655,6 +666,8 @@ footer {
   text-transform: uppercase;
   color: var(--footer-conection-text-color);
 }
+
+/* Footer subscription ===================  */
 .footer-subscription input {
   width: 358px;
   height: 50px;
