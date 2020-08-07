@@ -265,58 +265,18 @@ main {
 
 .merits-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
-.merits-list-item:not(:last-child) {
+.merits-list li:not(:last-child) {
   margin-right: 30px;
 }
-.merits-list-item {
-  display: block;
-  width: 270px;
-}
-.item-1::before {
-  display: block;
-  content: "";
+.merits-list-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--merits-img-background-color);
   width: 270px;
   height: 120px;
-  background-image: url(../images/main/section-2/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--merits-img-background-color);
-  margin-bottom: 30px;
-}
-.item-2::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-image: url(../images/main/section-2/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--merits-img-background-color);
-  margin-bottom: 30px;
-}
-.item-3::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-image: url(../images/main/section-2/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--merits-img-background-color);
-  margin-bottom: 30px;
-}
-.item-4::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-image: url(../images/main/section-2/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--merits-img-background-color);
   margin-bottom: 30px;
 }
 .merits-list-item h3 {
@@ -328,7 +288,7 @@ main {
   color: #212121;
   margin-bottom: 10px;
 }
-.merits-list-item-description {
+.merits-list-item p {
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -389,7 +349,6 @@ main {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-list-teammate:not(:last-child) {
   margin-right: 30px;
 }
@@ -433,7 +392,6 @@ main {
 .team-list-teammate-social-list li a {
   display: block;
 }
-
 .team-list-teammate-social-list-item-link-svg {
   height: 22px;
   width: 22px;
@@ -442,11 +400,9 @@ main {
 .team-list-teammate-social-list-item-link-svg {
   fill: #afb1b8;
 }
-
 .team-list-teammate-social-list-item:hover {
   background-color: var(--accent-color);
 }
-
 .team-list-teammate-social-list-item:hover
   .team-list-teammate-social-list-item-link-svg {
   fill: var(--teammember-social-img-hover);
@@ -461,7 +417,7 @@ main {
 .clients-list li:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list a {
+.clients-list li {
   width: 170px;
   height: 90px;
   border: 1px solid var(--clients-list-color);
@@ -471,7 +427,11 @@ main {
   justify-content: center;
   align-items: center;
 }
-.clients-list-item:hover .clients-list-item-img {
+
+.clients-list li:hover {
+  border: 1px solid var(--accent-color);
+}
+.clients-list li:hover .clients-list-item-img {
   fill: var(--accent-color);
 }
 
@@ -561,17 +521,18 @@ main {
 
 /* Footer ========================================*/
 footer {
-  background: #2f303a;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
-
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: fit-content;
   padding-left: 214px;
   padding-right: 214px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #2f303a;
+  height: 252px;
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -635,7 +596,6 @@ footer {
 .footer-connections-socials li:not(:last-child) {
   margin-right: 10px;
 }
-
 .footer-connections-socials li {
   width: 44px;
   height: 44px;
