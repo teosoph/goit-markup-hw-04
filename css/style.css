@@ -405,7 +405,6 @@ main {
 
   fill: #afb1b8;
 }
-
 .team-list-teammate-social-list-item a:hover {
   background-color: var(--accent-color);
 }
