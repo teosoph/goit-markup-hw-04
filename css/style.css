@@ -399,7 +399,7 @@ main {
   height: 44px;
   border-radius: 50%;
 }
-.team-list-teammate-social-list-item svg {
+.team-list-teammate-social-list-item-link-svg {
   height: 22px;
   width: 22px;
 
