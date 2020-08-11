@@ -399,14 +399,13 @@ main {
   height: 44px;
   border-radius: 50%;
 }
-.team-list-teammate-social-list-item-link-svg {
+.team-list-teammate-social-list-item svg {
   height: 22px;
   width: 22px;
-  color: #afb1b8;
-}
-.team-list-teammate-social-list-item-link-svg {
+
   fill: #afb1b8;
 }
+
 .team-list-teammate-social-list-item a:hover {
   background-color: var(--accent-color);
 }
@@ -529,7 +528,6 @@ main {
   margin-bottom: 20px;
   overflow: hidden;
 }
-
 .projects-list-item-overlay {
   /* opacity: 0; */
   position: absolute;
