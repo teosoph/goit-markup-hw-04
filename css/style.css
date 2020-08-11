@@ -272,8 +272,7 @@ main {
   margin-right: auto;
 }
 
-/*  Section 2  */
-
+/*  Section 2  Merits =======================*/
 .merits-list {
   display: flex;
 }
@@ -392,7 +391,6 @@ main {
   margin-right: 32px;
   margin-bottom: 24px;
 }
-
 .team-list-teammate-social-list li a {
   display: flex;
   justify-content: center;
@@ -401,7 +399,6 @@ main {
   height: 44px;
   border-radius: 50%;
 }
-
 .team-list-teammate-social-list-item-link-svg {
   height: 22px;
   width: 22px;
@@ -413,7 +410,8 @@ main {
 .team-list-teammate-social-list-item a:hover {
   background-color: var(--accent-color);
 }
-.team-list-teammate-social-list-item:hover
+.team-list-teammate-social-list-item
+  a:hover
   .team-list-teammate-social-list-item-link-svg {
   fill: var(--teammember-social-img-hover);
 }
@@ -437,14 +435,12 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 .clients-list li:hover {
   border: 1px solid var(--accent-color);
 }
 .clients-list li:hover .clients-list-item-img {
   fill: var(--accent-color);
 }
-
 .clients-list-item-img {
   fill: var(--clients-list-color);
 }
@@ -490,21 +486,17 @@ main {
 }
 .projects-list li {
   width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 
   border: 1px solid #eeeeee;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 .projects-list li:nth-child(3n) {
   margin-right: 0;
 }
-.projects-list-item-link img {
-  margin-bottom: 20px;
-}
-.projects-list-item-link div {
+.projects-list-item-description {
   margin-left: 24px;
 }
 .projects-list-item-link h2 {
@@ -517,7 +509,7 @@ main {
 
   margin-bottom: 12px;
 }
-.projects-list-item-link p {
+.projects-list-item-type {
   font-family: var(--font);
   font-style: normal;
   font-weight: normal;
@@ -528,7 +520,38 @@ main {
 
   margin-bottom: 20px;
 }
+.projects-list-item:hover .projects-list-item-overlay {
+  /* opacity: 1; */
+  top: 0;
+}
+.projects-list-item-wraper {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 
+.projects-list-item-overlay {
+  /* opacity: 0; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background: rgba(33, 150, 243, 0.9);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  transition: all 0.9s linear;
+}
 /* Footer ========================================*/
 footer {
   display: flex;
@@ -712,7 +735,6 @@ footer {
 .footer-connections-socials-linkedin:hover {
   background-color: var(--accent-color);
 }
-
 .footer-connections-title-2 {
   font-family: var(--font);
   font-style: normal;
