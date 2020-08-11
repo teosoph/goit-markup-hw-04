@@ -410,7 +410,7 @@ main {
 .team-list-teammate-social-list-item-link-svg {
   fill: #afb1b8;
 }
-.team-list-teammate-social-list-item:hover {
+.team-list-teammate-social-list-item a:hover {
   background-color: var(--accent-color);
 }
 .team-list-teammate-social-list-item:hover
