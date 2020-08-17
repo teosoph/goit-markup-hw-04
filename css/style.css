@@ -628,6 +628,9 @@ footer {
 /* Footer socials connections ==================== */
 .footer-connections-socials {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-right: 94px;
 }
 .footer-connections-socials li:not(:last-child) {
@@ -642,25 +645,18 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
-.footer-connections-socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-connections-socials li:hover {
+  background-color: var(--accent-color);
 }
-.footer-connections-socials-link {
+.footer-connections-socials a {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;
   width: 30px;
 }
-.footer-connections-socials-img {
+.footer-connections-socials svg {
   fill: var(--footer-conection-text-color);
-  height: 44px;
-  width: 44px;
-}
-.footer-connections-socials:hover {
-  background-color: var(--accent-color);
 }
 .footer-connections-title-2 {
   font-family: var(--font);
