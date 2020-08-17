@@ -400,9 +400,6 @@ main {
   border-radius: 50%;
 }
 .team-list-teammate-social-list-item-link-svg {
-  height: 22px;
-  width: 22px;
-
   fill: #afb1b8;
 }
 .team-list-teammate-social-list-item a:hover {
@@ -645,91 +642,24 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
-/*  instagram */
-.footer-connections-socials-instagram {
+.footer-connections-socials {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-connections-socials-instagram-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30px;
-}
-.footer-connections-socials-instagram-img {
-  fill: var(--footer-conection-text-color);
-  height: 20px;
-  width: 20px;
-}
-.footer-connections-socials-instagram:hover {
-  background-color: var(--accent-color);
-}
-
-/* twitter */
-.footer-connections-socials-twitter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-connections-socials-twitter-link {
+.footer-connections-socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;
   width: 30px;
 }
-.footer-connections-socials-twitter-img {
+.footer-connections-socials-img {
   fill: var(--footer-conection-text-color);
-  height: 20px;
-  width: 20px;
+  height: 44px;
+  width: 44px;
 }
-.footer-connections-socials-twitter:hover {
-  background-color: var(--accent-color);
-}
-
-/* facebook */
-.footer-connections-socials-facebook {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-connections-socials-facebook-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30px;
-}
-.footer-connections-socials-facebook-img {
-  fill: var(--footer-conection-text-color);
-  height: 20px;
-  width: 20px;
-}
-.footer-connections-socials-facebook:hover {
-  background-color: var(--accent-color);
-}
-
-/* linkedin */
-.footer-connections-socials-linkedin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-connections-socials-linkedin-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30px;
-}
-.footer-connections-socials-linkedin-img {
-  fill: var(--footer-conection-text-color);
-  height: 20px;
-  width: 20px;
-}
-.footer-connections-socials-linkedin:hover {
+.footer-connections-socials:hover {
   background-color: var(--accent-color);
 }
 .footer-connections-title-2 {
