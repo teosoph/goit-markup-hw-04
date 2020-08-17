@@ -425,20 +425,21 @@ main {
 .clients-list li:not(:last-child) {
   margin-right: 30px;
 }
-.clients-list li {
-  width: 170px;
-  height: 90px;
-  border: 1px solid var(--clients-list-color);
-  border-radius: 4px;
-
+.clients-list a {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--clients-list-color);
+  border-radius: 4px;
 }
-.clients-list li:hover {
+.clients-list a:hover {
   border: 1px solid var(--accent-color);
 }
-.clients-list li:hover .clients-list-item-img {
+.clients-list a:hover .clients-list-item-img {
   fill: var(--accent-color);
 }
 .clients-list-item-img {
