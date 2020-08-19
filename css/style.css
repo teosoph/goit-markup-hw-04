@@ -81,17 +81,16 @@ h1 {
   margin: 0;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
   max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
 }
-
 section {
+  margin: 0 auto;
   padding-bottom: 94px;
 }
 
@@ -235,7 +234,6 @@ main {
   padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 94px; */
   max-width: 1600px;
   height: 600px;
 
@@ -560,7 +558,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  width: fit-content;
+  max-width: 1600px;
   padding-left: 214px;
   padding-right: 214px;
   margin-left: auto;
@@ -569,6 +567,14 @@ footer {
   background: #2f303a;
   height: 252px;
 }
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wraper {
+}
+
 .footer-logo {
   margin-bottom: 20px;
 }
@@ -675,6 +681,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--footer-conection-text-color);
+  margin-bottom: 20px;
 }
 
 /* Footer subscription ===================  */
