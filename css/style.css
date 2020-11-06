@@ -345,7 +345,6 @@ main {
 .doings {
   padding-bottom: 94px;
 }
-
 .doings-list {
   display: flex;
   justify-content: center;
@@ -378,7 +377,8 @@ main {
   text-transform: uppercase;
 }
 
-/* team section ==================================*/
+/* Section 4 ==================================*/
+/* TEAM */
 .team {
   width: 1600px;
   padding-top: 94px;
@@ -391,14 +391,12 @@ main {
 }
 .team-list-teammate {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background-color: #fff;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-
-  padding-bottom: 30px;
 }
 .team-list-teammate:not(:last-child) {
   margin-right: 30px;
@@ -422,6 +420,7 @@ main {
   letter-spacing: 0.03em;
   color: var(--description-text-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 .team-list-teammate-social-list {
   display: flex;
@@ -429,8 +428,6 @@ main {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 24px;
-
-  display: none;
 }
 .team-list-teammate-social-list li a {
   display: flex;
