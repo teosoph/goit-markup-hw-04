@@ -343,6 +343,7 @@ main {
 
 /* doings list ===================================*/
 .doings {
+  width: 1600px;
   padding-bottom: 94px;
 }
 .doings-list {
