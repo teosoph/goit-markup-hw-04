@@ -680,7 +680,7 @@ footer .container {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Footer connections ==================== */
+/* Footer connection ==================== */
 .footer-connections p {
   font-family: var(--font);
   font-style: normal;
@@ -693,7 +693,7 @@ footer .container {
   display: block;
   margin-bottom: 20px;
 }
-/* Footer socials connections ==================== */
+/* Footer  connection socials ==================== */
 .footer-connections-socials {
   display: flex;
   justify-content: center;
@@ -720,10 +720,6 @@ footer .container {
 }
 .footer-connections-socials a {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30px;
 }
 .footer-connections-socials svg {
   fill: var(--footer-conection-text-color);
