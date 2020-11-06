@@ -61,7 +61,8 @@ body {
   color: var(--font-color);
 }
 header,
-footer {
+footer,
+.hero {
   width: 1600px;
 }
 h1 {
@@ -80,7 +81,7 @@ img {
 }
 section {
   margin: 0 auto;
-  width: 1600px;
+  width: 1170px;
 }
 
 /* CLASSES =========== */
