@@ -14,109 +14,96 @@
 
   <!-- BODY  ==================================================================-->
   <body>
-    <header class="header">
-      <div class="container flex-container">
-        <!-- Logo + navigation =========================== -->
-        <div>
-          <!-- logo -->
-          <div class="header-navigation-logo">
-            <a class="logo link" href="./index.html">
-              <span class="logo-1 link hover">web</span>
-              <span class="logo-2 link"> studio </span>
-            </a>
-          </div>
+    <header>
+      <div class="container">
+        <!-- logo -->
+        <a class="logo link" href="./index.html">
+          <span class="logo-1 link hover">web</span>
+          <span class="logo-2 link"> studio </span>
+        </a>
 
-          <!-- Меню навигации -->
+        <!-- navigation -->
+        <nav class="header-navigation">
+          <ul class="header-navigation-list list">
+            <li class="active-page">
+              <a class="link hover focus current" href="index.html">Студия</a>
+            </li>
+            <li>
+              <a class="link hover focus" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="">
+              <a class="link hover focus" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-          <nav class="header-navigation">
-            <ul class="header-navigation-list list">
-              <li class="active-page">
-                <a class="link hover focus" href="index.html">Студия</a>
-              </li>
-              <li>
-                <a class="link hover focus" href="portfolio.html">Портфолио</a>
-              </li>
-              <li class="">
-                <a class="link hover focus" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- e-mail + tele =========================== -->
-        <div>
-          <!-- contacts -->
-          <div class="header-contacts">
-            <address class="header-address">
-              <ul class="header-address-list list">
-                <!-- e-mail -->
-                <li class="header-address-list-email">
-                  <a
-                    class="header-address-list-email-link link hover focus"
-                    href="mailto:"
-                    aria-label="e-mail icon"
-                  >
-                    <svg
-                      class="header-address-list-email-img"
-                      width="16"
-                      height="11.2"
-                    >
-                      <use href="./images/sprite.svg#e-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <!-- telephone -->
-                <li class="header-address-list-tel">
-                  <a
-                    class="header-address-list-tel-link link hover focus"
-                    href="tel:+380961111111"
-                    aria-label="telephone icon"
-                  >
-                    <svg
-                      class="header-address-list-tel-img"
-                      width="10"
-                      height="14.94"
-                    >
-                      <use href="./images/sprite.svg#telephone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </address>
-
-            <a href=""></a>
-          </div>
-        </div>
+        <!-- contacts -->
+        <address class="header-address">
+          <ul class="header-address-list list">
+            <!-- e-mail -->
+            <li class="header-address-list-email">
+              <a
+                class="header-address-list-email-link link hover focus"
+                href="mailto:"
+                aria-label="e-mail icon"
+              >
+                <svg
+                  class="header-address-list-email-img"
+                  width="16"
+                  height="11.2"
+                >
+                  <use href="./images/sprite.svg#e-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <!-- telephone -->
+            <li class="header-address-list-tel">
+              <a
+                class="header-address-list-tel-link link hover focus"
+                href="tel:+380961111111"
+                aria-label="telephone icon"
+              >
+                <svg
+                  class="header-address-list-tel-img"
+                  width="10"
+                  height="14.94"
+                >
+                  <use href="./images/sprite.svg#telephone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
     <!-- MAIN ================================================================== -->
     <main>
-      <!--  Section 1 ==================================================================== -->
+      <!--  Section 1 ================================================== -->
       <!-- HERO -->
       <section class="hero">
         <div class="hero-slider">
           <h1 class="hero-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-
           <button class="hero-button">Заказать услугу</button>
         </div>
       </section>
 
-      <!-- Section 2 =============================================================-->
+      <!-- Section 2 =====================================================-->
       <!-- merits -->
       <section class="merits">
         <div class="container">
           <ul class="merits-list list">
             <!-- item_1 -->
             <li class="merits-list-item">
-              <div>
+              <!-- <div >
                 <svg width="65.32" height="70">
                   <use href="./images/sprite.svg#antenna"></use>
                 </svg>
-              </div>
+              </div> -->
               <h3>Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
@@ -125,11 +112,11 @@
             </li>
             <!-- item_2 -->
             <li class="merits-list-item">
-              <div>
+              <!-- <div >
                 <svg width="66.96" height="70">
                   <use href="./images/sprite.svg#clock"></use>
                 </svg>
-              </div>
+              </div> -->
               <h3>Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
@@ -138,11 +125,11 @@
             </li>
             <!-- item_3 -->
             <li class="merits-list-item">
-              <div>
+              <!-- <div>
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#diagram"></use>
                 </svg>
-              </div>
+              </div> -->
               <h3>Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
@@ -151,11 +138,11 @@
             </li>
             <!-- item_4 -->
             <li class="merits-list-item">
-              <div>
+              <!-- <div>
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#astronaut"></use>
                 </svg>
-              </div>
+              </div> -->
               <h3 class="merits-list-item-title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -177,36 +164,33 @@
           <ul class="doings-list list">
             <!-- item 1 -->
             <li>
-              <a class="link" href="#">
-                <h3>Десктопные приложения</h3>
-              </a>
               <img
+                width="370"
                 src="./images/main/section-3/box-1.jpg"
                 alt="Десктопные приложения"
               />
             </li>
+            <!-- <h3>Десктопные приложения</h3> -->
 
             <!-- item 2 -->
             <li>
-              <a class="link" href="#">
-                <h3>Мобильные приложения</h3>
-              </a>
               <img
+                width="370"
                 src="./images/main/section-3/box-2.jpg"
                 alt="Мобильные приложения"
               />
             </li>
+            <!-- <h3>Мобильные приложения</h3> -->
 
             <!-- item 3 -->
             <li>
-              <a class="link" href="#">
-                <h3>Дизайнерские решения</h3>
-              </a>
               <img
+                width="370"
                 src="./images/main/section-3/box-3.jpg"
                 alt="Дизайнерские решения"
               />
             </li>
+            <!-- <h3>Дизайнерские решения</h3> -->
           </ul>
         </div>
       </section>
@@ -531,7 +515,7 @@
 
       <!-- section-5 -->
       <!-- Clients ================================================================== -->
-      <section class="clients">
+      <section hidden class="clients">
         <div class="container">
           <!-- Title -->
           <h2 class="title">Постоянные клиенты</h2>
@@ -607,31 +591,30 @@
     </main>
 
     <!-- FOOTER ============================================================= -->
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <div class="footer-contacts">
-          <div class="footer-logo">
-            <a class="footer-logo-link" href="./index.html">
-              <span class="logo-2-1 link hover">web</span>
-              <span class="logo-2-2 link"> studio </span>
-            </a>
-          </div>
+        <!-- footer-contacts ========================================= -->
+        <div class="footer-logo-contacts">
+          <a class="footer-logo-link link" href="./index.html">
+            <span class="logo-2-1 hover">web</span>
+            <span class="logo-2-2"> studio </span>
+          </a>
 
           <!-- footer-address -->
           <address class="footer-contacts-address">
             г. Киев, пр-т Леси Украинки, 26
           </address>
 
-          <ul class="footer-contacts-address-list list">
+          <ul class="footer-contacts-list list">
             <!-- footer-email -->
-            <li class="footer-contacts-email">
-              <a class="footer-contacts-email-link link" href="mailto:"
+            <li>
+              <a class="footer-contacts-list-email link" href="mailto:"
                 >info@devstudio.com</a
               >
             </li>
             <!-- footer-tel -->
-            <li class="footer-contacts-tel">
-              <a class="footer-contacts-tel link" href="tel:+380961111111"
+            <li>
+              <a class="footer-contacts-list-tel link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -639,7 +622,7 @@
         </div>
 
         <!-- foorter-connections =======================================-->
-        <div class="footer-connections">
+        <div hidden class="footer-connections">
           <!-- foorter-connections-title -->
           <p>Присоединяйтесь</p>
 
@@ -701,14 +684,41 @@
         </div>
 
         <!-- subscription ===========================================-->
-        <div class="footer-subscription">
+        <div hidden class="footer-subscription">
           <p class="footer-connections-title-2">Подпишитесь на рассылку</p>
-          <input class="footer-connection-input" lang="en" type="text" />
+
+          <form class="footer-subscription-form" action="#" method="GET">
+            <section class="footer-contact-form-section">
+              <input
+                class="footer-connection-input"
+                type="email"
+                lang="en"
+                name="user-email"
+                placeholder="Your email*"
+                required
+              />
+            </section>
+
+            <button class="footer-button-tosign" type="submit">
+              <span> Подписаться </span>
+            </button>
+          </form>
         </div>
-        <button class="footer-button-tosign">
-          <span> Подписаться </span>
-        </button>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".footer-subscription-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+      })();
+    </script>
   </body>
 </html>
