@@ -60,6 +60,10 @@ body {
   font-size: 16px;
   color: var(--font-color);
 }
+header,
+footer {
+  width: 1600px;
+}
 h1 {
   margin: 0;
 }
@@ -76,6 +80,7 @@ img {
 }
 section {
   margin: 0 auto;
+  width: 1600px;
 }
 
 /* CLASSES =========== */
@@ -343,7 +348,6 @@ main {
 
 /* doings list ===================================*/
 .doings {
-  width: 1600px;
   padding-bottom: 94px;
 }
 .doings-list {
@@ -381,7 +385,6 @@ main {
 /* Section 4 ==================================*/
 /* TEAM */
 .team {
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
