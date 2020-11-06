@@ -99,7 +99,7 @@ section {
 }
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: auto auto;
   padding-left: 15px;
   padding-right: 15px;
 }
