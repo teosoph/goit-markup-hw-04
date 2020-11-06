@@ -1,44 +1,42 @@
 :root {
+  /* container */
+  --max-width: 1200px;
+
+  /* Colors ==================== */
   /* header */
   --logo-text: "Raleway";
-  --logo-color-1: #000000;
-  --logo-color-2: #ffffff;
-  --logo-color-3: #2196f3;
+  --logo-color-1: rgb(0, 0, 0);
+  --logo-color-2: rgb(255, 255, 255);
+  --logo-color-3: rgb(33, 150, 243);
   /* headrer menu */
-  --header-menu-title-color: #212121;
-  --header-menu-address-color: #757575;
+  --header-menu-title-color: rgb(33, 33, 33);
+  --header-menu-address-color: rgb(117, 117, 117);
   /* main */
   --font: "Roboto";
-  --font-color: #212121;
-  --background-color: #ffffff;
+  --font-color: rgb(33, 33, 33);
+  --background-color: rgb(255, 255, 255);
   /* hero */
-  --hero-slider-background-color: #2f303a;
-  --hero-title-color: #ffffff;
-  --title-color: #212121;
-  --description-text-color: #757575;
-
+  --hero-slider-background-color: rgb(47, 48, 58, 0.4);
+  --hero-title-color: rgb(255, 255, 255);
+  --title-color: rgb(33, 33, 33);
+  --description-text-color: rgb(117, 117, 117);
   /* section-2 merits-list */
-  --merits-img-background-color: #f5f4fa;
+  --merits-img-background-color: rgb(245, 244, 250);
   /* section-3 doing-list*/
   --doings-img-background: rgba(47, 48, 58, 0.8);
-  --doings-img-font: #ffffff;
+  --doings-img-font: rgb(255, 255, 255);
   /* clients list */
-  --clients-list-color: #afb1b8;
-  /* Team */
-  --teammember-social-img-hover: #fff;
+  --clients-list-color: rgb(175, 177, 184);
+  /* team */
+  --teammember-social-img-hover: rgb(255, 255, 255);
   /* footer */
-  --footer-conection-text-color: #ffffff;
+  --footer-conection-text-color: rgb(255, 255, 255);
   --footer-address-text-color: rgba(255, 255, 255, 0.6);
-
   /* portfolio */
   --portfolio-list-item-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-
   /* hover + focus */
-  --accent-color: #2196f3;
-
-  /* container */
-  --max-width: 1200px;
+  --accent-color: rgb(33, 150, 243);
 }
 
 * {
@@ -152,7 +150,6 @@ header .container {
 .header-navigation-list li:not(:last-child) {
   margin-right: 40px;
 }
-
 .header-navigation-list a {
   font-weight: 500;
   font-size: 14px;
@@ -161,7 +158,6 @@ header .container {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .active-page {
   display: flex;
   align-items: center;
@@ -171,6 +167,7 @@ header .container {
 .active-page a.current {
   color: var(--accent-color);
 }
+
 /* menu underline ===========================  */
 .active-page::after {
   content: "";
@@ -238,16 +235,17 @@ main {
   letter-spacing: 0.03em;
   color: var(--font-color);
 }
-/* .title {
+.title {
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
   margin-bottom: 50px;
-} */
+}
 
-/* hero ==================================== */
+/* Section 1 ============================ */
+/* HERO ==================================== */
 .hero-slider {
   padding-bottom: 200px;
   padding-top: 200px;
@@ -261,7 +259,7 @@ main {
       var(--hero-slider-background-color),
       var(--hero-slider-background-color)
     ),
-    url(../images/main/section-1/hero-img.jpg);
+    url(../images/main/section-1/slider.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -301,8 +299,8 @@ main {
   color: var(--accent-color);
 }
 
-/*  Section 2  Merits =======================*/
-
+/*  Section 2   =======================*/
+/* Merits ==================== */
 .merits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -313,7 +311,11 @@ main {
 .merits-list li:not(:last-child) {
   margin-right: 30px;
 }
-.merits-list-item div {
+.merits-list-item {
+  height: 251px;
+  width: 270px;
+}
+.merits-list-item-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,15 +345,7 @@ main {
 .doings {
   padding-bottom: 94px;
 }
-.doings .title {
-  font-weight: bold;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
 
-  text-align: center;
-  margin-bottom: 50px;
-}
 .doings-list {
   display: flex;
   justify-content: center;
