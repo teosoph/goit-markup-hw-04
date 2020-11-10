@@ -1,42 +1,41 @@
 :root {
-  /* container */
-  --max-width: 1200px;
-
-  /* Colors ==================== */
   /* header */
   --logo-text: "Raleway";
-  --logo-color-1: rgb(0, 0, 0);
-  --logo-color-2: rgb(255, 255, 255);
-  --logo-color-3: rgb(33, 150, 243);
+  --logo-color-1: #000000;
+  --logo-color-2: #ffffff;
+  --logo-color-3: #2196f3;
   /* headrer menu */
-  --header-menu-title-color: rgb(33, 33, 33);
-  --header-menu-address-color: rgb(117, 117, 117);
+  --header-menu-title-color: #212121;
+  --header-menu-address-color: #757575;
   /* main */
   --font: "Roboto";
-  --font-color: rgb(33, 33, 33);
-  --background-color: rgb(255, 255, 255);
+  --font-color: #212121;
+  --background-color: #ffffff;
   /* hero */
-  --hero-slider-background-color: rgb(47, 48, 58, 0.4);
-  --hero-title-color: rgb(255, 255, 255);
-  --title-color: rgb(33, 33, 33);
-  --description-text-color: rgb(117, 117, 117);
+  --hero-slider-background-color: #2f303a;
+  --hero-title-color: #ffffff;
+  --title-color: #212121;
+  --description-text-color: #757575;
+
   /* section-2 merits-list */
-  --merits-img-background-color: rgb(245, 244, 250);
+  --merits-img-background-color: #f5f4fa;
   /* section-3 doing-list*/
   --doings-img-background: rgba(47, 48, 58, 0.8);
-  --doings-img-font: rgb(255, 255, 255);
+  --doings-img-font: #ffffff;
   /* clients list */
-  --clients-list-color: rgb(175, 177, 184);
-  /* team */
-  --teammember-social-img-hover: rgb(255, 255, 255);
+  --clients-list-color: #afb1b8;
+  /* Team */
+  --teammember-social-img-hover: #fff;
   /* footer */
-  --footer-conection-text-color: rgb(255, 255, 255);
+  --footer-conection-text-color: #ffffff;
   --footer-address-text-color: rgba(255, 255, 255, 0.6);
+
   /* portfolio */
   --portfolio-list-item-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
   /* hover + focus */
-  --accent-color: rgb(33, 150, 243);
+  --accent-color: #2196f3;
 }
 
 * {
@@ -76,7 +75,6 @@ img {
 }
 section {
   margin: 0 auto;
-  width: 1600px;
 }
 
 /* CLASSES =========== */
@@ -98,14 +96,14 @@ section {
   display: block;
 }
 .container {
-  max-width: var(--max-width);
-  margin: auto auto;
+  width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.flex-container {
+/* .flex-container {
   display: flex;
-}
+} */
 
 /* HEADER =====================================*/
 header .container {
@@ -113,12 +111,23 @@ header .container {
   align-items: center;
   /* justify-content: space-between; */
 }
+
+/* logo ============== */
 .logo {
   display: flex;
   align-items: center;
+
+  font-family: var(--logo-text);
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-1);
+
   margin-right: 85px;
 }
-.logo-1 {
+.logo-text {
   font-family: var(--logo-text);
   font-style: normal;
   font-weight: bold;
@@ -128,15 +137,6 @@ header .container {
   color: var(--logo-color-3);
 
   margin-right: 9px;
-}
-.logo-2 {
-  font-family: var(--logo-text);
-  font-style: normal;
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: var(--logo-color-1);
 }
 
 /* header navigation menu ======================  */
@@ -151,6 +151,7 @@ header .container {
 .header-navigation-list li:not(:last-child) {
   margin-right: 40px;
 }
+
 .header-navigation-list a {
   font-weight: 500;
   font-size: 14px;
@@ -159,6 +160,7 @@ header .container {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .active-page {
   display: flex;
   align-items: center;
@@ -168,7 +170,6 @@ header .container {
 .active-page a.current {
   color: var(--accent-color);
 }
-
 /* menu underline ===========================  */
 .active-page::after {
   content: "";
@@ -236,17 +237,16 @@ main {
   letter-spacing: 0.03em;
   color: var(--font-color);
 }
-.title {
+/* .title {
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
   margin-bottom: 50px;
-}
+} */
 
-/* Section 1 ============================ */
-/* HERO ==================================== */
+/* hero ==================================== */
 .hero-slider {
   padding-bottom: 200px;
   padding-top: 200px;
@@ -260,7 +260,7 @@ main {
       var(--hero-slider-background-color),
       var(--hero-slider-background-color)
     ),
-    url(../images/main/section-1/slider.jpg);
+    url(../images/main/section-1/hero-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -300,8 +300,8 @@ main {
   color: var(--accent-color);
 }
 
-/*  Section 2   =======================*/
-/* Merits ==================== */
+/*  Section 2  Merits =======================*/
+
 .merits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -312,11 +312,7 @@ main {
 .merits-list li:not(:last-child) {
   margin-right: 30px;
 }
-.merits-list-item {
-  height: 251px;
-  width: 270px;
-}
-.merits-list-item-icon {
+.merits-list-item div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,6 +341,15 @@ main {
 /* doings list ===================================*/
 .doings {
   padding-bottom: 94px;
+}
+.doings .title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+
+  text-align: center;
+  margin-bottom: 50px;
 }
 .doings-list {
   display: flex;
@@ -378,12 +383,20 @@ main {
   text-transform: uppercase;
 }
 
-/* Section 4 ==================================*/
-/* TEAM */
+/* team section ==================================*/
 .team {
+  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
+}
+.team .title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
@@ -391,12 +404,14 @@ main {
 }
 .team-list-teammate {
   width: 270px;
-  height: 428px;
+  height: 368px;
   background-color: #fff;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+
+  padding-bottom: 30px;
 }
 .team-list-teammate:not(:last-child) {
   margin-right: 30px;
@@ -420,7 +435,6 @@ main {
   letter-spacing: 0.03em;
   color: var(--description-text-color);
   text-align: center;
-  margin-bottom: 16px;
 }
 .team-list-teammate-social-list {
   display: flex;
@@ -428,6 +442,8 @@ main {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 24px;
+
+  display: none;
 }
 .team-list-teammate-social-list li a {
   display: flex;
@@ -438,7 +454,7 @@ main {
   border-radius: 50%;
 }
 .team-list-teammate-social-list-item-link-svg {
-  fill: rgb(175, 177, 184);
+  fill: #afb1b8;
   transition: fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-teammate-social-list-item a {
@@ -453,12 +469,7 @@ main {
   fill: var(--teammember-social-img-hover);
 }
 
-/*  Section 5 ===============================*/
-/* Clients ============================== */
-.clients .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+/* Clients section ===============================*/
 .clients-list {
   display: flex;
   justify-content: center;
@@ -552,6 +563,9 @@ main .buttons {
 .projects-list li:nth-child(3n) {
   margin-right: 0;
 }
+.projects-list li:nth-child(n + 7) {
+  margin-bottom: 0;
+}
 .projects-list-item-description {
   margin-left: 24px;
 }
@@ -628,12 +642,9 @@ footer .container {
   align-items: center;
   margin-left: 0;
 }
-.footer-logo-contacts {
-  margin-right: 70px;
-}
 .footer-logo-link {
   display: flex;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo-2-1 {
   font-family: var(--logo-text);
@@ -665,10 +676,10 @@ footer .container {
   letter-spacing: 0.03em;
   color: #ffffff;
 
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-contacts-list li:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-contacts-list-email,
 .footer-contacts-list-tel {
@@ -679,8 +690,6 @@ footer .container {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-/* Footer connection ==================== */
 .footer-connections p {
   font-family: var(--font);
   font-style: normal;
@@ -693,7 +702,7 @@ footer .container {
   display: block;
   margin-bottom: 20px;
 }
-/* Footer  connection socials ==================== */
+/* Footer socials connections ==================== */
 .footer-connections-socials {
   display: flex;
   justify-content: center;
@@ -720,6 +729,10 @@ footer .container {
 }
 .footer-connections-socials a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
 }
 .footer-connections-socials svg {
   fill: var(--footer-conection-text-color);
