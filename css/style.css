@@ -12,7 +12,7 @@
   --font-color: #212121;
   --background-color: #ffffff;
   /* hero */
-  --hero-slider-background-color: #2f303a;
+  --hero-slider-background-color: rgb(47, 48, 58, 0.4);
   --hero-title-color: #ffffff;
   --title-color: #212121;
   --description-text-color: #757575;
@@ -75,7 +75,7 @@ img {
 }
 section {
   margin: 0 auto;
-  /* border: 10px solid #ff0000; */
+  border: 3px solid #ff0000;
   width: 100%;
 }
 
@@ -103,7 +103,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
 
-  /* border: 10px solid #00ff37; */
+  border: 3px solid #00ff37;
 }
 /* .flex-container {
   display: flex;
@@ -111,7 +111,7 @@ section {
 
 /* HEADER =====================================*/
 header {
-  /* border: 10px solid #1900ff; */
+  border: 3px solid #1900ff;
   border: 1px solid #ececec;
 }
 
@@ -144,8 +144,6 @@ header .container {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--logo-color-3);
-
-  margin-right: 9px;
 }
 
 /* header navigation menu ======================  */
@@ -269,7 +267,7 @@ main {
       var(--hero-slider-background-color),
       var(--hero-slider-background-color)
     ),
-    url(../images/main/section-1/hero-img.jpg);
+    url(../images/main/section-1/slider.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -412,7 +410,7 @@ main {
 }
 .team-list-teammate {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background-color: #fff;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -443,6 +441,7 @@ main {
   letter-spacing: 0.03em;
   color: var(--description-text-color);
   text-align: center;
+  margin-bottom: 16px;
 }
 .team-list-teammate-social-list {
   display: flex;
@@ -450,8 +449,6 @@ main {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 24px;
-
-  display: none;
 }
 .team-list-teammate-social-list li a {
   display: flex;
@@ -478,6 +475,17 @@ main {
 }
 
 /* Clients section ===============================*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients > .container {
+  text-align: center;
+}
+.clients h2 {
+  margin-bottom: 50px;
+}
 .clients-list {
   display: flex;
   justify-content: center;
@@ -638,31 +646,24 @@ footer {
   background: #2f303a;
   height: 252px;
 
-  /* border: 10px solid  /; ищквукЖ 10зч ыщдшв №1900ааж ;/
- #1900ff; */
+  border: 3px solid #1900ff;
 }
 footer .container {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.footer-logo-link {
+/* footer-logo-contacts */
+.footer-logo-contacts {
+  margin-right: 70px;
+}
+/* footer logo ==================*/
+footer .logo-link {
   display: flex;
   margin-bottom: 20px;
 }
-.logo-2-1 {
-  font-family: var(--logo-text);
-  font-style: normal;
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: var(--logo-color-3);
-  display: inline-block;
 
-  margin-right: 10px;
-}
-.logo-2-2 {
+footer .logo-link {
   font-family: var(--logo-text);
   font-style: normal;
   font-weight: bold;
@@ -670,8 +671,13 @@ footer .container {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--logo-color-2);
-  display: inline-block;
 }
+footer .logo-link span {
+  color: var(--logo-color-3);
+}
+
+/* footer contacts ==================*/
+
 .footer-contacts-address {
   font-family: var(--font);
   font-style: normal;
@@ -735,8 +741,6 @@ footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 30px;
 }
 .footer-connections-socials svg {
   fill: var(--footer-conection-text-color);
