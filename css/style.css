@@ -70,8 +70,8 @@ h3 {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  /* height: auto; */
 }
 section {
   margin: 0 auto;
@@ -226,14 +226,16 @@ header .container {
   margin-right: 10px;
   /* transition: fill 250ms cubic-bezier(0.4 0 0.2 1); */
 }
-.header-address-list-email-link:hover .header-address-list-email-img {
+.header-address-list-email-link:hover .header-address-list-email-img,
+.header-address-list-email-link:focus .header-address-list-email-img {
   fill: var(--accent-color);
 }
 .header-address-list-tel-img {
   fill: var(--header-menu-address-color);
   margin-right: 10px;
 }
-.header-address-list-tel-link:hover .header-address-list-tel-img {
+.header-address-list-tel-link:hover .header-address-list-tel-img,
+.header-address-list-tel-link:focus .header-address-list-tel-img {
   fill: var(--accent-color);
 }
 
@@ -302,7 +304,8 @@ main {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--background-color);
   color: var(--accent-color);
 }
@@ -409,23 +412,19 @@ main {
   justify-content: center;
 }
 .team-list-teammate {
-  width: 270px;
-  height: 428px;
   background-color: #fff;
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-
-  padding-bottom: 30px;
 }
 .team-list-teammate:not(:last-child) {
   margin-right: 30px;
 }
 .team-list-teammate-img {
   display: block;
-  margin-bottom: 30px;
   width: 270px;
+  margin-bottom: 30px;
 }
 .team-list-teammate h3 {
   font-weight: 500;
@@ -448,7 +447,7 @@ main {
   justify-content: space-between;
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 .team-list-teammate-social-list li a {
   display: flex;
@@ -459,18 +458,20 @@ main {
   border-radius: 50%;
 }
 .team-list-teammate-social-list-item-link-svg {
+  width: 44px;
+  height: 44px;
   fill: #afb1b8;
-  transition: fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-teammate-social-list-item a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-list-teammate-social-list-item a:hover {
+.team a:hover,
+.team a:focus {
   background-color: var(--accent-color);
 }
-.team-list-teammate-social-list-item
-  a:hover
-  .team-list-teammate-social-list-item-link-svg {
+.team a:hover .team-list-teammate-social-list-item-link-svg,
+.team a:focus .team-list-teammate-social-list-item-link-svg {
   fill: var(--teammember-social-img-hover);
 }
 
@@ -515,7 +516,8 @@ main {
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list a:hover .clients-list-item-img {
+.clients-list a:hover .clients-list-item-img,
+.clients-list a:focus .clients-list-item-img {
   fill: var(--accent-color);
 }
 
@@ -540,19 +542,19 @@ main .buttons {
   letter-spacing: 0.03em;
   line-height: 26px;
 
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-
   border: none;
 
-  /* text-align: center; */
   padding: 6px 22px 6px 22px;
 
+  /* text-align: center; */
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1); */
   /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.buttons-filter button:hover {
+.buttons-filter button:hover,
+.buttons-filter button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
   box-shadow: var(--portfolio-list-item-shadow);
@@ -602,7 +604,8 @@ main .buttons {
 
   /* margin-bottom: 20px; */
 }
-.projects-list-item:hover .projects-list-item-overlay {
+.projects-list-item:hover .projects-list-item-overlay,
+projects-list-item:focus .projects-list-item-overlay {
   top: 0;
 }
 .projects-list-item-wraper {
@@ -630,7 +633,8 @@ main .buttons {
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-list-item:hover {
+.projects-list-item:hover,
+.projects-list-item:focus {
   box-shadow: var(--portfolio-list-item-shadow);
 }
 
@@ -700,6 +704,12 @@ footer .logo-link span {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* footer connections */
+
+.footer-connections {
+  align-self: flex-start;
+}
 .footer-connections p {
   font-family: var(--font);
   font-style: normal;
@@ -734,7 +744,8 @@ footer .logo-link span {
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-connections-socials li:hover {
+.footer-connections-socials li:hover,
+.footer-connections-socials li:focus {
   background-color: var(--accent-color);
 }
 .footer-connections-socials a {
