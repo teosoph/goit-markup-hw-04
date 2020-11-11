@@ -7,32 +7,28 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
 
+  <!-- BODY  ==================================================================-->
   <body>
-    <h1 hidden>111111</h1>
-
     <header>
       <div class="container">
         <!-- logo -->
-        <a class="logo link" href="./index.html">
-          <span class="logo-1 link hover">web</span>
-          <span class="logo-2 link"> studio </span>
-        </a>
+        <a class="logo link" href="./index.html" aria-label="Главная страница"
+          ><span class="logo-text link hover">Web</span> Studio</a
+        >
 
         <!-- navigation -->
         <nav class="header-navigation">
           <ul class="header-navigation-list list">
-            <li>
-              <a class="link hover focus" href="index.html">Студия</a>
-            </li>
             <li class="active-page">
-              <a class="link hover focus current" href="portfolio.html"
-                >Портфолио</a
-              >
+              <a class="link hover focus current" href="index.html">Студия</a>
+            </li>
+            <li>
+              <a class="link hover focus" href="portfolio.html">Портфолио</a>
             </li>
             <li class="">
               <a class="link hover focus" href="#">Контакты</a>
@@ -82,206 +78,518 @@
       </div>
     </header>
 
+    <!-- MAIN ================================================================== -->
     <main>
-      <div class="container">
-        <!-- buttons section ====== Разделы сайта -->
-        <section class="buttons">
-          <ul class="buttons-filter" style="list-style-type: none">
-            <li>
-              <button>Все</button>
+      <!--  Section 1 ================================================== -->
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-slider">
+          <h1 class="hero-title">
+            Эффективные решения<br />для вашего бизнеса
+          </h1>
+          <button class="hero-button">Заказать услугу</button>
+        </div>
+      </section>
+
+      <!-- Section 2 =====================================================-->
+      <!-- merits -->
+      <section class="merits">
+        <div class="container">
+          <ul class="merits-list list">
+            <!-- item_1 -->
+            <li class="merits-list-item">
+              <!-- <div >
+                <svg width="65.32" height="70">
+                  <use href="./images/sprite.svg#antenna"></use>
+                </svg>
+              </div> -->
+              <h3>Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
             </li>
-            <li>
-              <button>Веб-сайты</button>
+            <!-- item_2 -->
+            <li class="merits-list-item">
+              <!-- <div >
+                <svg width="66.96" height="70">
+                  <use href="./images/sprite.svg#clock"></use>
+                </svg>
+              </div> -->
+              <h3>Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
             </li>
-            <li>
-              <button>Приложения</button>
+            <!-- item_3 -->
+            <li class="merits-list-item">
+              <!-- <div>
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#diagram"></use>
+                </svg>
+              </div> -->
+              <h3>Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
             </li>
-            <li>
-              <button>Дизайн</button>
-            </li>
-            <li>
-              <button>Маркетинг</button>
+            <!-- item_4 -->
+            <li class="merits-list-item">
+              <!-- <div>
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#astronaut"></use>
+                </svg>
+              </div> -->
+              <h3 class="merits-list-item-title">Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
             </li>
           </ul>
+        </div>
+      </section>
 
-          <!-- projects section -->
-          <ul class="projects-section projects-list list">
-            <!-- project-1 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="#">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/1.jpg"
-                    alt="Технокряк"
-                  />
-                  <p class="projects-list-item-overlay">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title link">Технокряк</h2>
-                  <p class="projects-list-item-type">Веб-сайт</p>
-                </div>
+      <!-- Section 3  ==================================================================-->
+      <!-- our doings -->
+      <section class="doings">
+        <div class="container">
+          <!-- Title -->
+          <h2 class="title">Чем мы занимаемся</h2>
+
+          <!--  doings list -->
+          <ul class="doings-list list">
+            <!-- item 1 -->
+            <li>
+              <img
+                width="370"
+                src="./images/main/section-3/box-1.jpg"
+                alt="Десктопные приложения"
+              />
+            </li>
+            <!-- <h3>Десктопные приложения</h3> -->
+
+            <!-- item 2 -->
+            <li>
+              <img
+                width="370"
+                src="./images/main/section-3/box-2.jpg"
+                alt="Мобильные приложения"
+              />
+            </li>
+            <!-- <h3>Мобильные приложения</h3> -->
+
+            <!-- item 3 -->
+            <li>
+              <img
+                width="370"
+                src="./images/main/section-3/box-3.jpg"
+                alt="Дизайнерские решения"
+              />
+            </li>
+            <!-- <h3>Дизайнерские решения</h3> -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- section 4 ========================================================= -->
+      <!-- TEAM -->
+      <section class="team">
+        <div class="container">
+          <!-- Title -->
+          <h2 class="title">Наша команда</h2>
+
+          <!-- Team list -->
+          <ul class="team-list list">
+            <!-- teammate 1 -->
+            <li class="team-list-teammate">
+              <img
+                class="team-list-teammate-img"
+                src="./images/main/section-4/img-1.jpg"
+                alt="Николай Кучеренко"
+              />
+              <h3>Николай Кучеренко</h3>
+              <p>Product Designer</p>
+              <ul class="team-list-teammate-social-list list">
+                <!-- Instagram -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="Instagram icon"
+                  >
+                    <svg
+                      class="team-list-teammate-social-list-item-link-svg"
+                      width="44"
+                      height="44"
+                    >
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- Twitter -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="twitter icon"
+                  >
+                    <svg
+                      class="team-list-teammate-social-list-item-link-svg"
+                      width="44"
+                      height="44"
+                    >
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- facebook -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="facebook icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- linkedin -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="linkedin icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- teammate 2 -->
+            <li class="team-list-teammate">
+              <img
+                class="team-list-teammate-img"
+                src="./images/main/section-4/img-2.jpg"
+                alt="Ольга Иванова"
+              />
+              <h3>Ольга Иванова</h3>
+              <p>Frontend Developer</p>
+              <ul class="team-list-teammate-social-list list">
+                <!-- Instagram -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="Instagram icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- Twitter -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="twitter icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- facebook -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="facebook icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- linkedin -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="linkedin icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- teammate 3 -->
+            <li class="team-list-teammate">
+              <img
+                class="team-list-teammate-img"
+                src="./images/main/section-4/img-3.jpg"
+                alt=""
+              />
+              <h3>Андрей Шевченко</h3>
+              <p>Marketing</p>
+              <ul class="team-list-teammate-social-list list">
+                <!-- Instagram -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="Instagram icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- Twitter -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="twitter icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- facebook -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="facebook icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- linkedin -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="linkedin icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- teammate 4 -->
+
+            <li class="team-list-teammate">
+              <img
+                class="team-list-teammate-img"
+                src="./images/main/section-4/img-4.jpg"
+                alt=""
+              />
+              <h3>Иван Николаев</h3>
+              <p>UI Designer</p>
+              <ul class="team-list-teammate-social-list list">
+                <!-- Instagram -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="Instagram icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- Twitter -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="twitter icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- facebook -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="facebook icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <!-- linkedin -->
+                <li class="team-list-teammate-social-list-item">
+                  <a
+                    class="team-list-teammate-social-list-item-link"
+                    href="#"
+                    aria-label="linkedin icon"
+                  >
+                    <svg
+                      width="44"
+                      height="44"
+                      class="team-list-teammate-social-list-item-link-svg"
+                    >
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- section-5 -->
+      <!-- Clients ================================================================== -->
+      <section hidden class="clients">
+        <div class="container">
+          <!-- Title -->
+          <h2 class="title">Постоянные клиенты</h2>
+
+          <!-- Clients list -->
+          <ul class="clients-list list">
+            <!-- client-1 -->
+            <li>
+              <a class="clients-list-item" href="#" aria-label="Client-1">
+                <svg class="clients-list-item-img img" width="44" height="49">
+                  <use href="./images/sprite.svg#client-1"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client-2 -->
+
+            <li>
+              <a class="clients-list-item" href="#" aria-label="Client-2">
+                <svg class="clients-list-item-img img" width="40" height="52">
+                  <use href="./images/sprite.svg#client-2"></use>
+                </svg>
               </a>
             </li>
 
-            <!-- project-2 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/2.jpg"
-                    alt="Постер"
-                  />
-                  <p class="projects-list-item-overlay">
-                    дывфтжтм щвтмжщывтмщ ывзывоми
-                  </p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title link">
-                    Постер New Orlean vs Golden Star
-                  </h2>
-                  <p class="projects-list-item-type">Дизайн</p>
-                </div>
+            <!-- client-3 -->
+
+            <li>
+              <a class="clients-list-item" href="#" aria-label="Client-3">
+                <svg class="clients-list-item-img img" width="41" height="42.6">
+                  <use href="./images/sprite.svg#client-3"></use>
+                </svg>
               </a>
             </li>
 
-            <!-- project-3 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="#">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/3.jpg"
-                    alt="Seafood"
-                  />
-                  <p class="projects-list-item-overlay">333333333333333</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">Ресторан Seafood</h2>
-                  <p class="projects-list-item-type">Приложение</p>
-                </div>
+            <!-- client-4 -->
+
+            <li>
+              <a class="clients-list-item" href="#" aria-label="Client-4">
+                <svg
+                  class="clients-list-item-img img"
+                  width="79.66"
+                  height="42.02"
+                >
+                  <use href="./images/sprite.svg#client-4"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- client-5 -->
+            <li>
+              <a class="clients-list-item" href="#" aria-label="Client-5">
+                <svg class="clients-list-item-img img" width="59" height="47">
+                  <use href="./images/sprite.svg#client-5"></use>
+                </svg>
               </a>
             </li>
 
-            <!-- project-4 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/4.jpg"
-                    alt="Prime"
-                  />
-                  <p class="projects-list-item-overlay">44444444444444</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">Проект Prime</h2>
-                  <p class="projects-list-item-type">Маркетинг</p>
-                </div>
-              </a>
-            </li>
+            <!-- client-6 -->
 
-            <!-- project-5 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/5.jpg"
-                    alt="Boxes"
-                  />
-                  <p class="projects-list-item-overlay">55555555555555</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">Проект Boxes</h2>
-                  <p class="projects-list-item-type">Приложение</p>
-                </div>
-              </a>
-            </li>
-
-            <!-- project-6 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/6.jpg"
-                    alt="Borders"
-                  />
-                  <p class="projects-list-item-overlay">66666666666</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">
-                    Inspiration has no Borders
-                  </h2>
-                  <p class="projects-list-item-type">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-
-            <!-- project-7 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/7.jpg"
-                    alt="Limited"
-                  />
-                  <p class="projects-list-item-overlay">77777777777777777</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">
-                    Издание Limited Edition
-                  </h2>
-                  <p class="projects-list-item-type">Дизайн</p>
-                </div>
-              </a>
-            </li>
-
-            <!-- project-8 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/8.jpg"
-                    alt="LAB"
-                  />
-                  <p class="projects-list-item-overlay">8888888888888*****</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">Проект LAB</h2>
-                  <p class="projects-list-item-type">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-
-            <!-- project-9 -->
-            <li class="projects-list-item">
-              <a class="projects-list-item-link link" href="">
-                <div class="projects-list-item-wraper">
-                  <img
-                    class="projects-list-item-img img"
-                    src="./images/projects/9.jpg"
-                    alt="Business"
-                  />
-                  <p class="projects-list-item-overlay">9999999999999</p>
-                </div>
-                <div class="projects-list-item-description">
-                  <h2 class="projects-list-item-title">Growing Business</h2>
-                  <p class="projects-list-item-type">Приложение</p>
-                </div>
+            <li>
+              <a class="clients-list-item" href="#" aria-label="Client-6">
+                <svg
+                  class="clients-list-item-img img"
+                  width="88.48"
+                  height="45.44"
+                >
+                  <use href="./images/sprite.svg#client-6"></use>
+                </svg>
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER ============================================================= -->
@@ -400,5 +708,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        document
+          .querySelector(".footer-subscription-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+      })();
+    </script>
   </body>
 </html>

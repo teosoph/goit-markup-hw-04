@@ -75,6 +75,8 @@ img {
 }
 section {
   margin: 0 auto;
+  /* border: 10px solid #ff0000; */
+  width: 100%;
 }
 
 /* CLASSES =========== */
@@ -100,12 +102,19 @@ section {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  /* border: 10px solid #00ff37; */
 }
 /* .flex-container {
   display: flex;
 } */
 
 /* HEADER =====================================*/
+header {
+  /* border: 10px solid #1900ff; */
+  border: 1px solid #ececec;
+}
+
 header .container {
   display: flex;
   align-items: center;
@@ -252,7 +261,7 @@ main {
   padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   height: 600px;
 
   background-image: linear-gradient(
@@ -385,7 +394,6 @@ main {
 
 /* team section ==================================*/
 .team {
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
@@ -511,7 +519,6 @@ main .buttons {
 .buttons-filter {
   display: flex;
   justify-content: center;
-  height: 54px;
   margin-bottom: 34px;
 }
 .buttons-filter li:not(:last-child) {
@@ -544,17 +551,14 @@ main .buttons {
 }
 
 /* Portfolio Projects ============================*/
-.projects-section {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
 }
 .projects-list li {
   width: calc((100% - 60px) / 3);
+  height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -579,7 +583,7 @@ main .buttons {
 
   margin-bottom: 8px;
 }
-.projects-list-item-type {
+.projects-list-item-description > p {
   font-family: var(--font);
   font-style: normal;
   font-weight: normal;
@@ -588,7 +592,7 @@ main .buttons {
   line-height: 30px;
   color: var(--description-text-color);
 
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .projects-list-item:hover .projects-list-item-overlay {
   top: 0;
@@ -626,21 +630,21 @@ main .buttons {
 footer {
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
+  justify-content: center;
 
-  max-width: 1600px;
-  padding-left: 214px;
-  padding-right: 214px;
   margin-left: auto;
   margin-right: auto;
 
   background: #2f303a;
   height: 252px;
+
+  /* border: 10px solid  /; ищквукЖ 10зч ыщдшв №1900ааж ;/
+ #1900ff; */
 }
 footer .container {
   display: flex;
   align-items: center;
-  margin-left: 0;
+  justify-content: start;
 }
 .footer-logo-link {
   display: flex;
