@@ -606,7 +606,7 @@ main .buttons {
 .projects-list-item-link-wraper {
   position: relative;
   margin-bottom: 20px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .projects-list-item-img {
