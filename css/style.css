@@ -599,8 +599,22 @@ main .buttons {
 .projects-list li:nth-child(n + 7) {
   margin-bottom: 0;
 }
+.projects-list-item a {
+  height: 100%;
+}
+
+.projects-list-item-link-wraper {
+  position: relative;
+  margin-bottom: 20px;
+  /* overflow: hidden; */
+}
+
+.projects-list-item-img {
+  width: 100%;
+}
 .projects-list-item-description {
   margin-left: 24px;
+  margin-top: 20px;
 }
 .projects-list-item-link h2 {
   font-style: normal;
@@ -623,15 +637,18 @@ main .buttons {
 
   /* margin-bottom: 20px; */
 }
+
+/* Project item hover+focus ================== */
 .projects-list-item-link:hover .projects-list-item-overlay,
 .projects-list-item-link:focus .projects-list-item-overlay {
   top: 0;
 }
-.projects-list-item-wraper {
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;
+.projects-list-item-link:hover,
+.projects-list-item-link:focus {
+  box-shadow: var(--portfolio-list-item-shadow);
 }
+
+/* Project item overlay ================== */
 .projects-list-item-overlay {
   position: absolute;
   top: 100%;
@@ -651,10 +668,8 @@ main .buttons {
   color: #ffffff;
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.projects-list-item:hover,
-.projects-list-item:focus {
-  box-shadow: var(--portfolio-list-item-shadow);
+
+  /* display: none; */
 }
 
 /* Footer ========================================*/
