@@ -623,8 +623,8 @@ main .buttons {
 
   /* margin-bottom: 20px; */
 }
-.projects-list-item:hover .projects-list-item-overlay,
-.projects-list-item:focus .projects-list-item-overlay {
+.projects-list-item-link:hover .projects-list-item-overlay,
+.projects-list-item-link:focus .projects-list-item-overlay {
   top: 0;
 }
 .projects-list-item-wraper {
