@@ -243,6 +243,7 @@ header .container {
 .header-address-list-email-img {
   fill: var(--header-menu-address-color);
   margin-right: 10px;
+  transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address-list-email-link:hover .header-address-list-email-img,
 .header-address-list-email-link:focus .header-address-list-email-img {
@@ -251,6 +252,7 @@ header .container {
 .header-address-list-tel-img {
   fill: var(--header-menu-address-color);
   margin-right: 10px;
+  transition: fill 250s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address-list-tel-link:hover .header-address-list-tel-img,
 .header-address-list-tel-link:focus .header-address-list-tel-img {
