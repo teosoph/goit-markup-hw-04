@@ -623,11 +623,6 @@ main .buttons {
   height: 100%;
 }
 
-.projects-list-item-link-wraper {
-  position: relative;
-  overflow: hidden;
-}
-
 .projects-list-item-img {
   width: 100%;
 }
@@ -665,11 +660,14 @@ main .buttons {
 .projects-list-item-link:hover,
 .projects-list-item-link:focus {
   outline: 1px solid #eeeeee;
-
   box-shadow: var(--portfolio-list-item-shadow);
 }
 
 /* Project item overlay ================== */
+.projects-list-item-link-wraper {
+  position: relative;
+  overflow: hidden;
+}
 .projects-list-item-overlay {
   position: absolute;
   top: 100%;
