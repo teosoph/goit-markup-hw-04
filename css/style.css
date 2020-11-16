@@ -662,8 +662,8 @@ main .buttons {
 .projects-list-item-link:focus .projects-list-item-overlay {
   top: 0;
 }
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-list-item-link:hover,
+.projects-list-item-link:focus {
   outline: 1px solid #eeeeee;
 
   box-shadow: var(--portfolio-list-item-shadow);
