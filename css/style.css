@@ -611,8 +611,7 @@ main .buttons {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  /* border: 1px solid #eeeeee; */
-  outline: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 .projects-list li:nth-child(3n) {
   margin-right: 0;
@@ -625,8 +624,6 @@ main .buttons {
 }
 
 .projects-list-item-link-wraper {
-  margin-bottom: 20px;
-
   position: relative;
   overflow: hidden;
 }
@@ -667,6 +664,8 @@ main .buttons {
 }
 .projects-list-item:hover,
 .projects-list-item:focus {
+  outline: 1px solid #eeeeee;
+
   box-shadow: var(--portfolio-list-item-shadow);
 }
 
